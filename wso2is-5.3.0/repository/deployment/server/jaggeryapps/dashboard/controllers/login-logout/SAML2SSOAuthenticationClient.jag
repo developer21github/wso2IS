@@ -15,6 +15,7 @@ var multitenantUtils = Packages.org.wso2.carbon.utils.multitenancy.MultitenantUt
 
 
 function login(request){
+
     var result = callWSReturnJSON(webService, serverUrl2, "urn:login", new Array(request));
     var isAuthenticated = result.return;
     log.debug("Is Authenticated : " + isAuthenticated);

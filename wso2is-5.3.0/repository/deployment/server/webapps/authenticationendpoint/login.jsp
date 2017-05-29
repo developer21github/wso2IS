@@ -219,12 +219,12 @@
                                 if ((hasLocalLoginOptions && localAuthenticatorNames.size() > 1) || (!hasLocalLoginOptions)
                                         || (hasLocalLoginOptions && idpAuthenticatorMapping != null && idpAuthenticatorMapping.size() > 1)) {
                             %>
-                            <div class="form-group">
+                            <div class="form-group hide">
                                 <% if (hasLocalLoginOptions) { %>
                                 <label class="font-large">Other login options:</label>
                                 <%} %>
                             </div>
-                            <div class="form-group">
+                            <div class="btn-group btn-group-justified other-login-option-icon">
                                 <%
                                     int iconId = 0;
                                     if (idpAuthenticatorMapping != null) {
@@ -264,16 +264,16 @@
                                     <label for="icon-<%=iconId%>"><%=Encode.forHtmlContent(idpName)%></label>
                                 </div>
                                 <%} else { %>
-                                <div>
-                                <a onclick="javascript: handleNoDomain('<%=Encode.forJavaScriptAttribute(Encode.
-                                forUriComponent(idpName))%>',
-                                        '<%=Encode.forJavaScriptAttribute(Encode.forUriComponent(idpEntry.getValue()))%>')"
-                                   href="#" id="icon-<%=iconId%>">
-                                    <img class="idp-image" src="images/login-icon.png" data-toggle="tooltip"
-                                         data-placement="top" title="Sign in with <%=Encode.forHtmlAttribute(idpName)%>"/>
-                                </a>
-                                <label for="icon-<%=iconId%>"><%=Encode.forHtmlContent(idpName)%></label>
-                                    </div>
+                                <div class="btn-group" role="group">
+                                    <a onclick="javascript: handleNoDomain('<%=Encode.forJavaScriptAttribute(Encode.
+                                    forUriComponent(idpName))%>',
+                                            '<%=Encode.forJavaScriptAttribute(Encode.forUriComponent(idpEntry.getValue()))%>')"
+                                       href="#" id="icon-<%=iconId%>" class="btn btn-lg btn-<%=iconId%>">
+                                        <i class="ico-<%=iconId%>" data-toggle="tooltip"
+                                             data-placement="top" title="Sign in with <%=Encode.forHtmlAttribute(idpName)%>"></i>
+                                        <%=Encode.forHtmlContent(idpName)%>
+                                    </a>
+                                </div>
                                 <%} %>
                                 <%
                                 } else if (localAuthenticatorNames.size() > 0) {

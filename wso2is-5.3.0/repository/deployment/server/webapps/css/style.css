@@ -162,7 +162,8 @@ fieldset[disabled] .btn-primary{
     background-color: #199ad8;
     border-color: #199ad8;
 }
-.btn-facebook {
+.btn-facebook,
+.btn-2{
     font-size: 14px;
     color: #ffffff;
     background-color: #3b5998;
@@ -171,12 +172,15 @@ fieldset[disabled] .btn-primary{
     min-height: 50px;
 }
 a.btn-facebook:hover,
-a.btn-facebook:focus {
+a.btn-2:hover,
+a.btn-facebook:focus,
+a.btn-2:focus{
     border-color: #3b5998;
     background-color: #fff;
     color: #3b5998;
 }
-.ico-facebook {
+.ico-facebook,
+.ico-2{
     background: url(../images/facebook.png);
     width: 14px;
     height: 28px;
@@ -184,10 +188,12 @@ a.btn-facebook:focus {
     vertical-align: middle;
     margin-right: 10px;
 }
-a.btn-facebook:hover .ico-facebook {
+a.btn-facebook:hover .ico-facebook,
+a.btn-2:hover .ico-2{
     background-position: -15px 0px;
 }
-.btn-google {
+.btn-google,
+.btn-1{
     font-size: 14px;
     color: #ffffff;
     background-color: #d5503d;
@@ -196,12 +202,15 @@ a.btn-facebook:hover .ico-facebook {
     min-height: 50px;
 }
 a.btn-google:hover,
-a.btn-google:focus {
+a.btn-1:hover,
+a.btn-google:focus,
+a.btn-1:focus{
     border-color: #d5503d;
     background-color: #fff;
     color: #d5503d;
 }
-.ico-google {
+.ico-google,
+.ico-1{
     background: url(../images/google.png);
     width: 20px;
     height: 32px;
@@ -209,7 +218,8 @@ a.btn-google:focus {
     vertical-align: middle;
     margin-right: 10px;
 }
-a.btn-google:hover .ico-google {
+a.btn-google:hover .ico-google,
+a.btn-1:hover .ico-1{
     background-position: -20px 0px;
 }
 
@@ -2189,9 +2199,7 @@ footer a {
     .login-form form .text-right {
         text-align: left;
     }
-    .btn{
-        margin-bottom: 20px;
-    }
+
     /* Tabs */
     div.tab-content-wrapper h3{ font-size: 20px; text-align: center; margin-top: 20px; }
     div.tab-content-wrapper .seperator:after{ left: 50%; -webkit-transform: translate(-50%); -moz-transform: translate(-50%); -o-transform: translate(-50%); transform: translate(-50%); }

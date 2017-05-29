@@ -231,14 +231,3 @@
 
     <div class="clearfix"></div>
 </form>
-
-<div class="btn-group btn-group-justified">
-    <div class="btn-group" role="group">
-        <a  href="/samlsso" class="btn btn-lg btn-facebook"><i class="ico-facebook"></i> Sign up with
-            Facebook</a>
-
-    </div>
-    <div class="btn-group" role="group">
-        <a class="btn btn-lg btn-google"><i class="ico-google"></i> Sign up with Google</a>
-    </div>
-</div>

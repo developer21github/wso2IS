@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <Module>
-<ModulePrefs title="My Profile10">
+<ModulePrefs title="My Profile">
     <Require feature="pubsub-2"/>
 </ModulePrefs>
 <Content type="html" view="default">

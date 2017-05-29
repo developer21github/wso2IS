@@ -51,7 +51,7 @@
 
 <SSOIdentityProviderConfig>
   <ServiceProviders>
-    <ServiceProvider>
+    <!--ServiceProvider>
  <Issuer>wso2.my.dashboard</Issuer>
  <AssertionConsumerServiceURLs>
  <AssertionConsumerServiceURL>${carbon.protocol}://${carbon.host}:${carbon.management.port}/dashboard/acs</AssertionConsumerServiceURL>
@@ -62,6 +62,6 @@
       <AudiencesList>
         <Audience>carbonServer</Audience>
       </AudiencesList>
-    </ServiceProvider>
+    </ServiceProvider-->
   </ServiceProviders>
 </SSOIdentityProviderConfig>
